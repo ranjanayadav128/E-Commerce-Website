@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sproduct</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .small-img-group{
+        display: flex;
+        justify-content:space-between;
+      }
+
+      .small-img-col{
+        flex-basis: 24%;
+        cursor:pointer;
+        padding-right: 15px;
+      }
+
+      .sproduct select{
+        display: block;
+        padding: 5px 10px;
+      }
+      .sproduct input{
+        width: 50px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+
+      .sproduct input:focus{
+        outline: none;
+      }
+      .buy-btn{
+        background: coral;
+        opacity:1;
+        transition: 0.3s all;
+      }
+    </style>
+</head>
+<body>
+    <!--Navigation-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+        <h2>Fashion</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+         aria-expanded="false" aria-label="Toggle navigation">
+          <span><i id="bar" class="fas fa-bars"></i></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+              </li>
+              
+              <li class="nav-item"> 
+                <i class="fal fa-search"></i>
+                <i class="fal fa-shopping-bag"></i>
+              </li>
+              
+           </div>
+        </div>
+      </nav>
+
+      <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5">
+          <div class="col-lg-5 col-md-12 col-12">
+            <img class="img-fluid w-100 pb-1" src="./19 shirt.jpg" id="MainImg" alt="">
+
+            <div class="small-img-group">
+              <div class="small-img-col">
+                <img src="./f4.jpg" width="100%" class="small-img" alt="">
+              </div>
+
+              
+                <div class="small-img-col">
+                  <img src="./f2.jpg" width="100%" class="small-img" alt="">
+                </div>
+
+                
+                  <div class="small-img-col">
+                    <img src="./f5.jpg" width="100%" class="small-img" alt="">
+                  </div>
+
+                  
+                    <div class="small-img-col">
+                      <img src="./f3 (1).jpg" width="100%" class="small-img" alt="">
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-12">
+          <h6>Home / T-shirt</h6>
+          <h3 class="py-4">Men's Fashion T Shirt</h3>
+          <h2>639 Rs</h2>
+          <select class="my-3">
+            <option>Select Size</option>
+            <option>XL</option>
+            <option>XXL</option>
+            <option>Small</option>
+            <option>Large</option>
+          </select>
+          <input type="number" value="1">
+          <button class="buy-btn">Add To Cart</button>
+          <h4 class="mt-5 mb-4">Product Details</h4>
+          <span>A soft, breathable T-Shirt which is an excellent choice for the warmest day. It will mix great with any pair of jeans or pants.<br>This product made from 100% cotton and machine washable in 30 minutes and will keep its color like new. The T-shirt is perfect for a casual day out. available in wide range of sizes.
+           
+             
+          </span>
+        </div>
+        </div>
+      </section>
+
+      <section id="featured" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+          <h3>Related products</h3>
+          <hr class="mx-auto">
+          <p>Here you can check out our new products with fair price on Fashion</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+          
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="./watchess.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">womens Watch</h5>
+            <h4 class="p-price">520 Rs</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+    
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="./women jcket.avif" alt="">
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h5 class="p-name">Womens Jacket</h5>
+              <h4 class="p-price">920 Rs</h4>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+    
+            
+              <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="./kid shirt.webp" alt="">
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Kids Shirt</h5>
+                <h4 class="p-price">589 Rs</h4>
+                <button class="buy-btn">Buy Now</button>
+              </div>
+    
+    
+              
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                  <img class="img-fluid mb-3" src="./lehenga.jpg" alt="">
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Womens Traditional wear</h5>
+                  <h4 class="p-price">1356 Rs</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+         </div>
+       </section>
+
+      <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+          <p class="pt-3"> Buy Trending and New outfits with less price get discount on products avail benefits of seasons sale and get maximum discounts on mens,womens and kids wear.</p>
+          </div>
+          <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Featured</h5>
+            <ul class="text-uppercase list-unstyled">
+            <li><a href="#">men</a></li>
+            <li><a href="#">women</a></li>
+            <li><a href="#">boys</a></li>
+            <li><a href="#">girls</a></li>
+            <li><a href="#">new arrivals</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">clothes</a></li>
+          </ul>
+          </div>
+  
+          <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Contact Us</h5>
+          <div>
+               <h6 class="text-uppercase">Address</h6>
+               <p>123,Hinjewadi phase 2,near Lotus House PUNE,Maharashtra,India</p>
+          </div>
+               <div>
+            <h6 class="text-uppercase">Phone</h6>
+            <p>(123) 456-7890</p>
+          </div>
+           <div>
+            <h6 class="text-uppercase">Email</h6>
+            <p>fashionshop@gmail.com</p>
+          </div>
+        </div>
+    </div>
+  
+    <div class="copyright mt-5">
+      <div class="row container mx-auto">
+  
+        
+        <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+          <p>Fashion E-commerce @ 2021. all Rights Reserved</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+    crossorigin="anonymous"></script> 
+    
+    
+
+</body>
+</html>
