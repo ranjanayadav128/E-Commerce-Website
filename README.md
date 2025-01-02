@@ -1,1 +1,2 @@
 # E-Commerce-Website
+A simple fully Responsive E-Commerce Website using HTML,CSS,Bootstrap. It contains a Homep,Shop,Blog and Cart page with different product.It also contains option for selecting Clothes size and quantity. It has a Cart page that allows to store the products for buying. Basic HTML and CSS plays an important role here making whole website more attractive and responsive for all devices. A Navigation Scroll Bar will be there which will be helpful in viewing the images throughout the Webpage.
